@@ -1,5 +1,6 @@
 footer {
-    background: rgb(180, 180, 180);
+    background: rgba(150, 149, 149, 0.586);
+    width: 100%;
 }
 
 main {
@@ -22,3 +23,5 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
