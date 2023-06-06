@@ -1,0 +1,95 @@
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              ¿Quienes somos?
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              ¿Por donde empezar?
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="lugares.html"
+                  >Lugares turisticos</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="hospedajes.html">Hospedajes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              ¿Que hacer?
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="gastronomia.html">Gastronomia</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="eventos.html">Eventos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="agencias.html"
+                  >Agencias de Viajes</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Fondo animado de css -->
+<div class="fondo-animado"></div>
+body, html { height: 4521px; margin: 0; padding: 0; } .fondo-animado { position:
+fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background:
+linear-gradient(to right, #ff9966, #ff5e62); animation: animacion-fondo 10s ease
+infinite; } @keyframes animacion-fondo { 0% { background-position: 0% 50%; } 50%
+{ background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
