@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <title>Potenciar Turismo</title>
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -32,6 +33,14 @@
                     </div>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#porDondeEmpezarDropdown"
+                        aria-expanded="false" aria-controls="porDondeEmpezarDropdown">¿Por dónde empezar?</a>
+                    <div class="collapse sub-menu" id="porDondeEmpezarDropdown">
+                        <a class="dropdown-item" href="lugares.html">LUGARES TURISTICOS</a>
+                        <a class="dropdown-item" href="hospedajes.html">HOSPEDAJES</a>
+                    </div>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="collapse" data-target="#queHacerDropdown"
                         aria-expanded="false" aria-controls="queHacerDropdown">¿Qué hacer?</a>
                     <div class="collapse sub-menu" id="queHacerDropdown">
@@ -40,202 +49,81 @@
                         <a class="dropdown-item" href="agencias.html">AGENCIA DE VIAJES</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="collapse" data-target="#porDondeEmpezarDropdown"
-                        aria-expanded="false" aria-controls="porDondeEmpezarDropdown">¿Por dónde empezar?</a>
-                    <div class="collapse sub-menu" id="porDondeEmpezarDropdown">
-                        <a class="dropdown-item" href="lugares.html">LUGARES TURISTICOS</a>
-                        <a class="dropdown-item" href="hospedajes.html">HOSPEDAJES</a>
-                    </div>
-                </li>
             </ul>
         </div>
     </nav>
 </header>
   <main>
-
-    <div class="container marketing">
-
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-          </svg>
-          <h2 class="fw-normal">Costadoni Fabricio</h2>
-          <p>Es un honor darles la más cordial bienvenida a nuestro servicio de atención al cliente. Mi nombre es
-            Fabricio, y me complace ser parte de este equipo comprometido en brindarles una experiencia excepcional.</p>
-          <p><a class="btn btn-secondary" href="#">Saber más »</a></p>
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="user-card">
+              <a href="https://th.bing.com/th/id/OIP.ntI_xuQ2QRIt5_jT22rb-AAAAA?pid=ImgDet&rs=1" data-lightbox="user1"
+                data-title="Usuario 1">
+                <img src="https://th.bing.com/th/id/OIP.ntI_xuQ2QRIt5_jT22rb-AAAAA?pid=ImgDet&rs=1" alt="Usuario 1"
+                  class="img-fluid">
+              </a>
+              <h4>COSTADONI FABRICIO</h4>
+              <p>Correo electrónico: usuario1@gmail.com</p>
+              <p>Teléfono: 123-456-7890</p>
+            </div>
+          </div>
+  
+          <div class="col-md-6 mb-4">
+            <div class="user-card">
+              <a href="https://th.bing.com/th/id/OIP.ntI_xuQ2QRIt5_jT22rb-AAAAA?pid=ImgDet&rs=1" data-lightbox="user2"
+                data-title="Usuario 2">
+                <img src="https://th.bing.com/th/id/OIP.ntI_xuQ2QRIt5_jT22rb-AAAAA?pid=ImgDet&rs=1" alt="Usuario 2"
+                  class="img-fluid">
+              </a>
+              <h4>Usuario 2</h4>
+              <p>Correo electrónico: usuario2@gmail.com</p>
+              <p>Teléfono: 987-654-3210</p>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
-            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-          </svg>
-          <h2 class="fw-normal">Vera Leandro</h2>
-          <p>Es un honor darles la más cordial bienvenida a nuestro servicio de atención al cliente. Mi nombre es
-            Leandro, y me complace ser parte de este equipo comprometido en brindarles una experiencia excepcional.
-          </p>
-          <p><a class="btn btn-secondary" href="#">Saber más »</a></p>
-        </div>
-      </div>
-
-
-
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">Instagram</h2>
-          <p class="lead">Estimados clientes,
-
-            Es un honor para nosotros darles una cálida bienvenida a nuestro servicio de atención al cliente
-            excepcional.
-
-            Nos complace anunciar que ahora estamos presentes en Instagram, una plataforma dinámica y accesible que nos
-            permite estar más cerca de ustedes. A través de nuestro perfil oficial en Instagram, nos esforzamos por
-            brindarles un servicio de atención al cliente de primer nivel.
-
-            En nuestra cuenta de Instagram, encontrarán contenido relevante, noticias emocionantes y respuestas a sus
-            consultas. Estamos aquí para responder a sus preguntas, escuchar sus
-            comentarios y resolver cualquier problema que puedan enfrentar. Además, utilizaremos esta plataforma para
-            compartir consejos útiles y mantenerlos informados sobre las últimas novedades de nuestro
-            servicio.
-
-            Valoramos su confianza en nuestra empresa y nos comprometemos a estar presentes en cada paso de su
-            experiencia con nosotros. Nuestro objetivo es brindarles una atención al cliente excepcional y ayudarles a
-            obtener el máximo provecho de nuestro servicio.
-
-            Para unirse a nuestra comunidad en Instagram, simplemente busquen nuestro perfil oficial
-            @potenciarturismo y hagan clic en "Seguir". Así podrán recibir actualizaciones en su feed de noticias,
-            participar en nuestras publicaciones y enviar mensajes directos para recibir una atención personalizada.
-
-            Agradecemos su apoyo continuo y su confianza en nosotros. Esperamos servirles de manera excepcional tanto a
-            través de nuestra plataforma como en nuestra vibrante cuenta de
-            Instagram.
-
-            ¡Nos vemos en Instagram!
-
-
-          </p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
-              fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-          </svg>
+  
+        <div class="contact-section">
+          <h2>Formulario de Consultas</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre:</label>
+              <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+            </div>
+  
+            <div class="form-group">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+            </div>
+  
+            <div class="form-group">
+              <label for="message">Mensaje:</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Escriba su mensaje"></textarea>
+            </div>
+  
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">Facebook</h2>
-          <p class="lead">Estimados clientes,
-
-            Es un honor para nosotros darles una cálida bienvenida a nuestro servicio de atención al cliente
-            excepcional.
-
-            Nos complace anunciar que ahora estamos presentes en Facebook, una plataforma que nos permite mantenernos
-            conectados de una manera más accesible y dinámica. A través de nuestra página oficial de Facebook, nos
-            esforzamos por brindarles un servicio de atención al cliente de primer nivel.
-
-            En nuestra página de Facebook, encontrarán contenido relevante, noticias emocionantes y respuestas a sus
-            consultas. Estaremos disponibles para responder a sus preguntas, escuchar sus
-            comentarios y resolver cualquier problema que puedan enfrentar. Además, utilizaremos esta plataforma para
-            compartir consejos útiles y mantenerlos informados sobre las últimas novedades de nuestro
-            servicio.
-
-            Valoramos su confianza en nuestra empresa y nos comprometemos a estar presentes en cada paso de su
-            experiencia con nosotros. Nuestro objetivo es brindarles una atención al cliente excepcional y ayudarles a
-            obtener el máximo provecho de nuestro servicio.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
-              fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-          </svg>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">Gmail</h2>
-          <p class="lead">
-            Estimados clientes,
-
-            En nombre de nuestro equipo de atención al cliente, es un placer darles una cálida bienvenida a nuestro
-            servicio de soporte excepcional.
-
-            Nos complace anunciar que ahora estamos disponibles en Gmail para brindarles un servicio de atención al
-            cliente más rápido y eficiente. A través de esta plataforma de correo electrónico confiable, nos
-            comprometemos a responder a sus consultas, proporcionar asistencia personalizada y mantenernos conectados de
-            una manera más accesible y conveniente.
-
-            En su bandeja de entrada de Gmail, encontrará nuestro correo electrónico de atención al cliente oficial.
-            Estaremos encantados de recibir sus preguntas, comentarios y solicitudes, y nos comprometemos a responder en
-            el menor tiempo posible. Ya sea que necesiten ayuda, deseen realizar consultas o
-            deseen compartir sus experiencias, estamos aquí para ayudarles.
-
-            Valoramos enormemente su confianza en nosotros y queremos asegurarnos de que tengan una experiencia fluida y
-            satisfactoria con nuestro servicio. Estamos comprometidos en brindarles respuestas
-            claras y soluciones efectivas a sus necesidades.
-
-            Para contactarnos a través de Gmail, simplemente envíen un correo electrónico a nuestra dirección oficial
-            "potenciarturismo@gmail.com". Nos comprometemos a revisar su correo electrónico y responder en el
-            menor tiempo posible.
-
-            Agradecemos su apoyo continuo y su confianza en nosotros. Esperamos poder servirles de manera excepcional
-            tanto a través de nuestra plataforma como a través de Gmail.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
-              fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-          </svg>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
+    </div>
   </main>
+
   <div class="container">
     <footer class="py-2">
-      <ul class="nav justify-content-center">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
-        <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
-      </ul>
-      <p class="text-center text-body-secondary">Enhance Tourism all rights reserved - Costadoni and Vera 2023©
-      </p>
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">Enhance Tourism all rights reserved - Costadoni and Vera 2023©
+        </p>
     </footer>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"
-  integrity="sha384-xm/yVuxyZNl+HTkV2E3x72n0/G2rpJU8H50A9wATmPk6p/vwQgYAX82/CN4o8RVW"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-  crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 
 </html>

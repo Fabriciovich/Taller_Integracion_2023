@@ -1,0 +1,82 @@
+#hero {
+    animation: fadeIn 1s;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+.footer {
+    background-color: #343a40;
+  }
+  
+  .card-img-top {
+      transition: transform 0.7s ease-in-out; 
+    }
+  
+    .card-img-top:hover {
+      transform: scale(1.05);
+    }
+  
+    .navbar-brand {
+      font-size: 24px;
+    }
+    
+    .navbar-nav .nav-link {
+      animation: fadeInRight 0.5s ease-in-out;
+    }
+    
+    .sub-menu {
+      background-color: #5e5e5e;
+      padding: 10px;
+      border-radius: 0 0 4px 4px;
+      animation: fadeInDown 0.5s ease-in-out;
+    }
+    
+    .sub-menu .dropdown-item {
+      color: #ffffff;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .sub-menu .dropdown-item:hover {
+      background-color: #9b9b9b;
+    }
+    
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        padding-top: 70px;
+        padding-bottom: 50px;
+        height: 100%;
+        background-image: url(https://i1.wp.com/fueradeeje.com/wp-content/uploads/2020/04/destinos-para-conocer-en-Formosa-02.jpg?resize=1536%2C1021&ssl=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
