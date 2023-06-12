@@ -1,144 +1,155 @@
-
 .footer {
   background-color: #343a40;
 }
 
 .card-img-top {
-    transition: transform 0.7s; 
+  transition: transform 0.7s;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+  animation: fadeInRight 0.5s ease-in-out;
+}
+
+.sub-menu {
+  background-color: #5e5e5e;
+  padding: 10px;
+  border-radius: 0 0 4px 4px;
+  animation: fadeInDown 0.5s ease-in-out;
+}
+
+.sub-menu .dropdown-item {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-menu .dropdown-item:hover {
+  background-color: #9b9b9b;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
   }
 
-  .card-img-top:hover {
-    transform: scale(1.05);
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
 
-  .navbar-brand {
-    font-size: 24px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .navbar-nav .nav-link {
-    animation: fadeInRight 0.5s ease-in-out;
-  }
-  
-  .sub-menu {
-    background-color: #5e5e5e;
-    padding: 10px;
-    border-radius: 0 0 4px 4px;
-    animation: fadeInDown 0.5s ease-in-out;
-  }
-  
-  .sub-menu .dropdown-item {
-    color: #ffffff;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .sub-menu .dropdown-item:hover {
-    background-color: #9b9b9b;
-  }
-  
-  @keyframes fadeInRight {
-    from {
-      opacity: 0;
-      transform: translateX(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+}
+
+#hero {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    height: 100%;
-    background-image: url(https://i1.wp.com/fueradeeje.com/wp-content/uploads/2020/04/destinos-para-conocer-en-Formosa-02.jpg?resize=1536%2C1021&ssl=1);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  to {
+    opacity: 1;
   }
-  
-  .navbar {
-    margin-bottom: 20px;
-  }
-  
-  .content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    min-height: 100%;
-  }
-  
-  .contact-section {
-    max-width: 500px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    background-color: #ddd;
-  }
-  
-  .contact-section:hover {
-    transform: scale(1.05);
-  }
-  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  height: 100%;
+  background-image: url(https://i1.wp.com/fueradeeje.com/wp-content/uploads/2020/04/destinos-para-conocer-en-Formosa-02.jpg?resize=1536%2C1021&ssl=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-height: 100%;
+}
+
+.contact-section,
+.user-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  background-color: #ddd;
+}
+
+.contact-section:hover,
+.user-card:hover {
+  transform: scale(1.05);
+}
+
+.contact-section {
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #ddd;
+}
+
+.user-card {
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.user-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.user-card h4 {
+  margin-bottom: 5px;
+}
+
+.user-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+
+  .contact-section,
   .user-card {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-    background-color: #ddd;
+    max-width: 100%;
   }
-  
-  .user-card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  .user-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .user-card h4 {
-    margin-bottom: 5px;
-  }
-  
-  .user-card p {
-    margin-bottom: 0;
-  }
-  
-  @media (max-width: 576px) {
-    .contact-section,
-    .user-card {
-      max-width: 100%;
-    }
-  }
-
-  
-  
+}
