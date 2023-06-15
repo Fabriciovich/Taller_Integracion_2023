@@ -1,128 +1,98 @@
 body {
   width: 100vw;
-  background-color: #ffffff;
+  background-image: url(/img-inicio/fondo.jpg) ;
   font-family: Jetbrains Mono;
-}
-.footer {
-  position: relative;
-  width: 100%;
-  background-color: #202020;
-  min-height: 0px;
-  padding: 0px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 0px;
-}
-.temp {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: x-large;
-  margin-top: 15rem;
-}
-.social-icon, .menu {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 100px 0;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.social-icon__item, .menu__item {
-  list-style: none;
-}
-.social-icon__link {
-  font-size: 2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-}
-.social-icon__link:hover{
-  transform: translateY(-10px);
-}
-.menu__link {
-  font-family: 1.2rem;
-  color: #fff;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-  text-decoration: none;
-  opacity: 0.75;
-  font-weight: 300;
-}
-.menu_link:hover{
-  opacity: 1;
-}
-.footer p {
-  color: #000000;
-  margin: 15px 0 10px 0;
-  font-size: 1rem;
-  font-weight: 300;
-}
-.wave {
-  position: absolute;
-  top: -100px;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(/img-inicio/wave3.png);
-  background-size: 1000px 100px;
-}
-.wave#wave1 {
-  z-index: 1000;
-  opacity: 1;
-  bottom: 0;
-  animation: animateWaves 4s linear infinite;
-}
-.wave#wave2 {
-  z-index: 999;
-  opacity: 0.5;
-  bottom: 10px;
-  animation: animate 4s linear infinite !important;
-}
-.wave#wave3 {
-  z-index: 1000;
-  opacity: 0.2;
-  bottom: 15px;
-  animation: animateWaves 3s linear infinite;
-}
-.wave#wave4 {
-  z-index: 999;
-  opacity: 0.7;
-  bottom: 20px;
-  animation: animate 3s linear infinite;
-}
-@keyframes animateWaves {
-  0% {
-    background-position-x: 1000px;
-  }
-  100% {
-    background-position-x: 0px;
-  }
-}
-
-@keyframes animate {
-  0% {
-    background-position-x: -1000px;
-  }
-  100% {
-    background-position-x: 0px;
-  }
-}
-
-.social-icon__item .md {
-  color: white;
+  font-weight: bold;
+  font-size: large;
+   background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
 }
 .lea {
-  background-image: url(/img-inicio/destinos-para-conocer-en-Formosa-02.png);
+  background-image: url(/img-inicio/fondo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: black solid;
+  border-width:  2px;
   /* background-attachment: fixed;   */
+}
+.lea1 {
+  border: black solid;
+  border-width: 2px;
+}
+.lea2 {
+  border: black solid;
+  border-width: 1px;
+  background-image: url(/img-inicio/fondo.jpg);
+}
+.subra {
+  text-decoration: underline;
+  
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.navbar-nav .nav-link {
+  animation: fadeInRight 0.5s ease-in-out;
+}
+
+.sub-menu {
+  background-color: #5e5e5e;
+  padding: 10px;
+  border-radius: 0 0 4px 4px;
+  animation: fadeInDown 0.5s ease-in-out;
+}
+
+.sub-menu .dropdown-item {
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-menu .dropdown-item:hover {
+  background-color: #9b9b9b;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: none;
+  color: #000000;
+  padding: 3px 5px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px black solid;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 1px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.transparent-button:hover {
+  transform: scale(1.1);
 }
