@@ -2,12 +2,9 @@
   background-color: #343a40;
 }
 
-.card-img-top {
-  transition: transform 0.7s;
-}
-
-.card-img-top:hover {
-  transform: scale(1.05);
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease;
 }
 
 .navbar-brand {
@@ -179,4 +176,19 @@ body {
   font-size: 12px;
   color: #888;
 }
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 383px;
+  width: 466px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 383px;
+  width: 466px;
+}
+
 
